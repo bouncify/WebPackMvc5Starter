@@ -3,7 +3,7 @@
   "compileOnBuild": false,
 
   "compilerOptions": {
-    "outDir": "./App_dist/",
+    "outDir": "./App_dist/VisualStudio-AutoCompile/",
     "sourceMap": true,
     "alwaysStrict": true,
     "emitDecoratorMetadata": true,
