@@ -1,12 +1,15 @@
 ﻿# Webpack MVC5 Starter
 
-This project is the base starter for webpack configured to run with:
+This project is the base starter MVC project with asp.net configured with webpack 4
 
 * jquery
 * bootstrap (imported from the TS file through LESS)
 * typescript
 
 The site loads the basic asp.net starter pages
+
+* client side nuget packges and microsoft bundle have been removed as they are no longer needed with webpack
+
 
 ## 3 npm script commands
 
