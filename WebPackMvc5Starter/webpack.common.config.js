@@ -1,6 +1,7 @@
 ﻿const webpack = require('webpack'); //to access built-in plugins
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
@@ -32,7 +33,7 @@ module.exports = {
             },
             {
                 test: /\.less$/,
-                use: ["style-loader", "css-loader", "less-loader"]
+                use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
             }
         ]
     },
@@ -46,6 +47,10 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(["./App_Dist"], {
             "verbose": true // Write logs to console.
+        }),
+
+        new MiniCssExtractPlugin({
+            filename: "../../App/css/compiled-[name].css",
         }),
 
         new webpack.ProvidePlugin({

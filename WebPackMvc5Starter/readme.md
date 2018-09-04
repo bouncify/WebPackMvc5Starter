@@ -33,3 +33,10 @@ to allow easy access to run the modes
 * App_Dist contains webpack bundles
 * Configured for multiple entry points layout, admin, order central for a multipage application
 
+
+### notes
+
+added extraction of compiled css (extracted-layout.css) uning MiniCssExtractPlugin with this guide:
+https://survivejs.com/webpack/styling/separating-css/
+pulled the css into a file rather than having it within the JS
+
