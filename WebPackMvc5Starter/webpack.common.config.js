@@ -1,16 +1,13 @@
-﻿const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
-const webpack = require('webpack'); //to access built-in plugins
+﻿const webpack = require('webpack'); //to access built-in plugins
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const path = require('path');
 
 module.exports = {
-    mode: 'none',
     entry: {
         layout: './App/layout.ts',
         admin: './App/admin/UserPermission.ts',
         orderCentral: './App/OrderCentral/Main.ts'
     },
-    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -24,7 +21,6 @@ module.exports = {
                     "file-loader"
                 ]
             },
-
             // All font files will be handled here
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -33,9 +29,7 @@ module.exports = {
                         loader: "file-loader"
                     }
                 ]
-            }
-
-            ,
+            },
             {
                 test: /\.less$/,
                 use: ["style-loader", "css-loader", "less-loader"]
@@ -59,6 +53,6 @@ module.exports = {
             jQuery: "jquery",
             "window.jQuery": "jquery"
         })
-    ]
-
+    ],
+    stats: { colors: true }
 };

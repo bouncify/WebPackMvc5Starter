@@ -1,5 +1,5 @@
 {
-  "compileOnSave": true,
+  "compileOnSave": false,
   "compileOnBuild": false,
 
   "compilerOptions": {
