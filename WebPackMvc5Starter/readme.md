@@ -10,10 +10,9 @@ The site loads the basic asp.net starter pages
 
 ## 3 npm script commands
 
-* start-dev (dev mode includes source maps for debug)
-* start-dev-watch (dev mode + keeps running and watching for changes)
+* build-dev (dev mode includes source maps for debug)
 * build-prod (produces compact bundles for production)
-
+* start-dev-watch (dev mode + keeps running and watching for changes)
 
 dev is configred to include source maps to allow debugging
 
