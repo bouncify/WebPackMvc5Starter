@@ -15,7 +15,8 @@
     "jquery": "^3.3.1",
     "jquery-validation": "^1.17.0",
     "jquery-validation-unobtrusive": "^3.2.10",
-    "knockout": "^3.4.2"
+    "knockout": "^3.4.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.1"
   },
   "devDependencies": {
     "@types/bootstrap": "^4.1.2",
